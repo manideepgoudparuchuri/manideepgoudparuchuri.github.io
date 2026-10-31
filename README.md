@@ -19,7 +19,8 @@ npm run build    # production build in dist/
 
 ## Deploy
 
-Push this repo to GitHub, then import it on Netlify or Vercel.
+Live at https://manideepgoudparuchuri.github.io
 
-- Build command: `npm run build`
-- Output directory: `dist`
+Every push to `main` builds and deploys the site to GitHub Pages via `.github/workflows/deploy.yml`.
+
+To use a custom domain, add it under **Settings → Pages → Custom domain**, point your DNS to GitHub Pages, and update the `og:url` and `og:image` URLs in `index.html`.
