@@ -14,7 +14,12 @@ npm run build    # production build in dist/
 
 - Text, experience, skills, and projects: `src/data.js`
 - Profile photo: `public/profile.webp`
-- Resume download: `public/Paruchuri_Manideep_Resume.pdf`
+- Resume download: edit `resume/resume.html`, then regenerate the PDF:
+
+  ```bash
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --no-pdf-header-footer \
+    --print-to-pdf="$PWD/public/Paruchuri_Manideep_Resume.pdf" "file://$PWD/resume/resume.html"
+  ```
 - Social share image: `public/og-image.png`
 
 ## Deploy

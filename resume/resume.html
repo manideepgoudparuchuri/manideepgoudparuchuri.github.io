@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Manideep Goud Paruchuri - DevOps Engineer - Resume</title>
+<style>
+  @page { size: A4; margin: 10mm 13mm; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9.6pt;
+    line-height: 1.32;
+    color: #1f2937;
+  }
+  a { color: inherit; text-decoration: none; }
+  header { text-align: center; padding-bottom: 6pt; border-bottom: 2pt solid #4f46e5; }
+  h1 { margin: 0; font-size: 21pt; letter-spacing: 0.5pt; color: #111827; }
+  .headline { margin: 2pt 0 4pt; font-size: 11pt; font-weight: 600; color: #4f46e5; }
+  .contact { font-size: 9pt; color: #374151; }
+  .contact span + span::before { content: "  |  "; color: #9ca3af; white-space: pre; }
+  h2 {
+    margin: 8pt 0 3pt;
+    font-size: 10.5pt;
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+    color: #4f46e5;
+    border-bottom: 0.75pt solid #d1d5db;
+    padding-bottom: 2pt;
+    break-after: avoid;
+  }
+  h3 { margin: 4pt 0 1pt; font-size: 9.6pt; color: #111827; break-after: avoid; }
+  p { margin: 0; }
+  ul { margin: 2pt 0 0; padding-left: 13pt; }
+  li { margin: 1pt 0; break-inside: avoid; }
+  .skills { display: grid; grid-template-columns: 40mm 1fr; gap: 2pt 8pt; }
+  .skills dt { font-weight: 700; color: #111827; }
+  .skills dd { margin: 0; }
+  .job { margin-top: 6pt; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 8pt; }
+  .role { font-size: 10.5pt; font-weight: 700; color: #111827; }
+  .meta { font-size: 9pt; color: #4b5563; white-space: nowrap; }
+  .org { font-weight: 600; color: #374151; }
+  .tech { font-size: 8.8pt; color: #4b5563; margin-top: 2pt; }
+  .tech b { color: #374151; }
+  .project { margin-top: 5pt; break-inside: avoid; }
+  .keep { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Manideep Goud Paruchuri</h1>
+  <div class="headline">DevOps Engineer | CI/CD | Azure DevOps | Kubernetes | DevSecOps</div>
+  <div class="contact">
+    <span>Hyderabad, India</span>
+    <span><a href="mailto:manideepgoud2307@gmail.com">manideepgoud2307@gmail.com</a></span>
+    <span>+91 9154861747</span>
+    <span><a href="https://manideepgoudparuchuri.github.io">manideepgoudparuchuri.github.io</a></span>
+  </div>
+  <div class="contact">
+    <span><a href="https://www.linkedin.com/in/manideep-goud-paruchuri-183600208/">linkedin.com/in/manideep-goud-paruchuri-183600208</a></span>
+    <span><a href="https://github.com/manideepgoudparuchuri">github.com/manideepgoudparuchuri</a></span>
+  </div>
+</header>
+
+<h2>Professional Summary</h2>
+<p>
+  DevOps Engineer at DP World with 4+ years of experience building secure, automated delivery pipelines and
+  operating cloud-native platforms on Azure, AWS, and Kubernetes (AKS and EKS). Currently improving the
+  organization-wide CI/CD process in Azure DevOps with reusable pipeline templates and built-in security gates
+  (Veracode, Gitleaks, SonarQube). Previously reduced deployment time by 30%, cut manual release effort by 90%,
+  and remediated 1,000+ container vulnerabilities to lower security risk by 70%. Hands-on with Terraform, Helm,
+  GitHub Actions, Prometheus, Grafana, High Availability and Disaster Recovery, AWS Marketplace AMI delivery,
+  and on-premises GPU-based LLM inference.
+</p>
+
+<h2>Technical Skills</h2>
+<dl class="skills">
+  <dt>Cloud Platforms</dt>
+  <dd>Microsoft Azure (AKS), Amazon Web Services (EC2, EKS, S3, IAM, VPC, Security Groups, Secrets Manager, CloudFormation, AWS Marketplace)</dd>
+  <dt>CI/CD</dt>
+  <dd>Azure DevOps Pipelines (YAML templates), GitHub Actions, Jenkins, ArgoCD, Git, branching strategy, semantic versioning</dd>
+  <dt>DevSecOps</dt>
+  <dd>Veracode (SAST), Gitleaks (secret scanning), SonarQube, Anchore, Grype, CVE remediation, IAM least privilege, RBAC, secret rotation</dd>
+  <dt>Containers</dt>
+  <dd>Docker, Kubernetes, Helm, Istio, Karpenter, HPA/VPA, Docker-in-Docker (DinD)</dd>
+  <dt>Infrastructure as Code</dt>
+  <dd>Terraform, AWS CloudFormation, cloud-init</dd>
+  <dt>Observability</dt>
+  <dd>Prometheus, Grafana, New Relic, alerting, incident response, root cause analysis (RCA)</dd>
+  <dt>Scripting</dt>
+  <dd>Python, Bash</dd>
+  <dt>AI Infrastructure</dt>
+  <dd>On-premises GPU servers, open-source LLM hosting on Kubernetes</dd>
+  <dt>Operating Systems</dt>
+  <dd>Linux (Ubuntu, RHEL), Windows, VMware</dd>
+</dl>
+
+<h2>Work Experience</h2>
+
+<div class="job">
+  <div class="row">
+    <span class="role">DevOps Engineer <span class="org">| DP World</span></span>
+    <span class="meta">Hyderabad, India | Jul 2026 – Present</span>
+  </div>
+  <ul>
+    <li>Improving the organization-wide CI/CD process in Azure DevOps with standardized, reusable YAML pipeline templates, a central branching model, and semantic versioning across many microservices.</li>
+    <li>Integrating security gates into pipelines: Veracode static analysis, Gitleaks secret scanning with custom detection rules, and SonarQube code quality checks.</li>
+    <li>Contributing to a shared Python deployment library used by every Kubernetes service, including moving ConfigMap deployment to server-side apply to resolve a platform-wide size-limit failure.</li>
+    <li>Supporting AKS deployments and production releases, and writing root cause analyses (RCAs) for pipeline incidents.</li>
+    <li>Running knowledge-transfer sessions for new engineers on Kubernetes storage, scaling, and scheduling, and on Azure DevOps.</li>
+  </ul>
+  <div class="tech"><b>Tech:</b> Azure DevOps, Veracode, Gitleaks, SonarQube, AKS, Helm, Python</div>
+</div>
+
+<div class="job">
+  <div class="row">
+    <span class="role">DevOps Engineer <span class="org">| Modak Analytics</span></span>
+    <span class="meta">Hyderabad, India | Aug 2022 – Jun 2026</span>
+  </div>
+
+  <h3>Kubernetes and Cloud Infrastructure</h3>
+  <ul>
+    <li>Deployed and managed production workloads on Amazon EKS and Azure AKS across 3+ environments, ensuring high availability and scalability for applications serving multiple enterprise clients.</li>
+    <li>Built and maintained 10+ reusable Helm charts to standardize Kubernetes deployments across 5+ product teams, reducing per-team setup time by approximately 60% and eliminating configuration drift.</li>
+    <li>Provisioned AWS infrastructure (EC2, VPC, subnets, IAM roles, security groups) with Terraform and CloudFormation, using cloud-init for automated instance bootstrap.</li>
+    <li>Implemented Docker-in-Docker (DinD) workflows to run Google Cloud (gcloud) jobs in isolated CI/CD containers, eliminating cross-job dependency conflicts.</li>
+    <li>Conducted load and stress testing across 21+ services to find performance bottlenecks before production releases.</li>
+  </ul>
+
+  <h3>CI/CD and Automation</h3>
+  <ul>
+    <li>Designed and implemented CI/CD pipelines with GitHub Actions and Azure DevOps, reducing deployment time by 30% and cutting release failures through standardized build and test gates.</li>
+    <li>Developed a Python-based deployment automation framework supporting 10+ client environments, reducing manual deployment effort by 90% per release cycle.</li>
+    <li>Automated cloud and on-premises deployments with Bash across development, staging, and production tiers for repeatable, consistent releases.</li>
+    <li>Implemented deployment resume and failure-recovery mechanisms, cutting mean time to recovery (MTTR) by approximately 40%.</li>
+  </ul>
+
+  <h3>Security, Monitoring, and Reliability</h3>
+  <ul>
+    <li>Integrated Anchore and Grype container image scanning into CI/CD pipelines, remediating 1,000+ vulnerabilities and reducing container security risk by 70%.</li>
+    <li>Designed custom network security scanning covering 500+ IP ranges across AWS, Azure, and on-premises environments, remediating exposed attack vectors before production.</li>
+    <li>Implemented monitoring and alerting with Prometheus and Grafana, cutting mean incident detection time by 35%.</li>
+    <li>Supported High Availability (HA) and Disaster Recovery (DR) strategies and on-call incident response, maintaining a 99.9% uptime SLA for critical production services.</li>
+  </ul>
+
+  <h3>AWS Marketplace and LLM Infrastructure</h3>
+  <ul>
+    <li>Enabled customer deployments through AWS Marketplace with custom Amazon Machine Images (AMIs) for 3+ product releases, leading testing, security validation, and release readiness reviews.</li>
+    <li>Set up and maintained 4+ on-premises GPU machines hosting open-source Large Language Models (LLMs), supporting inference for 3+ models used by internal teams and clients.</li>
+  </ul>
+  <div class="tech"><b>Tech:</b> AWS, EKS, AKS, Terraform, CloudFormation, GitHub Actions, Azure DevOps, Helm, Anchore, Grype, Prometheus, Grafana, Python, Bash</div>
+</div>
+
+<h2>Projects</h2>
+<div class="project">
+  <div class="row"><span class="role">Secure CI/CD Pipeline Templates</span><span class="meta">DP World | Azure DevOps, Veracode, Gitleaks, SonarQube</span></div>
+  <p>Reusable Azure DevOps YAML templates that give every service the same build, versioning, and release flow, with Veracode, Gitleaks, and SonarQube checks built in for secure-by-default delivery.</p>
+</div>
+<div class="project">
+  <div class="row"><span class="role">Python Deployment Automation Framework</span><span class="meta">Modak Analytics | Python, Kubernetes, CI/CD</span></div>
+  <p>Orchestrated multi-client deployments across on-premises and cloud environments for 10+ client configurations, with resume-on-failure and rollback; saved approximately 8 hours of manual work per release.</p>
+</div>
+<div class="project">
+  <div class="row"><span class="role">Container Security Scanning Pipeline</span><span class="meta">Modak Analytics | GitHub Actions, Anchore, Grype</span></div>
+  <p>Automated CVE scanning for all containerized workloads; remediated 1,000+ vulnerabilities and enforced a gate that blocks high-severity images from reaching production.</p>
+</div>
+<div class="project">
+  <div class="row"><span class="role">On-Premises LLM Inference Platform</span><span class="meta">Modak Analytics | GPU, Kubernetes, Helm</span></div>
+  <p>Kubernetes-based LLM hosting on on-premises GPU servers with Helm deployments and a Prometheus and Grafana observability stack serving 3+ active models.</p>
+</div>
+
+<div class="keep">
+  <h2>Education</h2>
+  <div class="row">
+    <span><b>B.Tech, Information Technology</b> | Sreenidhi Institute of Science and Technology, Hyderabad</span>
+    <span class="meta">2018 – 2022 | CGPA 8.38 / 10</span>
+  </div>
+</div>
+
+<div class="keep">
+  <h2>Awards and Recognition</h2>
+  <div class="row">
+    <span><b>Emerging Leader Award</b> | Modak Analytics</span>
+    <span class="meta">Dec 2024</span>
+  </div>
+</div>
+
+<div class="keep">
+  <h2>Key Achievements</h2>
+  <ul>
+    <li>Reduced deployment time by 30% through CI/CD automation with GitHub Actions and Azure DevOps.</li>
+    <li>Eliminated 90% of manual deployment effort per release with a Python multi-client deployment framework.</li>
+    <li>Remediated 1,000+ container vulnerabilities, reducing container security risk by 70%.</li>
+    <li>Cut incident detection time by 35% and maintained 99.9% production uptime with Prometheus and Grafana monitoring.</li>
+    <li>Delivered 3+ AWS Marketplace AMI releases and operated 4+ on-premises GPU machines for LLM inference.</li>
+  </ul>
+</div>
+
+</body>
+</html>
