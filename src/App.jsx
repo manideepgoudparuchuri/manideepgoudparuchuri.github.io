@@ -65,7 +65,7 @@ const SectionTitle = ({ eyebrow, title }) => (
 
 const Card = ({ children, className = '' }) => (
   <div
-    className={`h-full rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:shadow-xl hover:shadow-cyan-500/10 ${className}`}
+    className={`h-full rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:shadow-xl hover:shadow-cyan-500/10 sm:p-6 ${className}`}
   >
     {children}
   </div>
@@ -244,7 +244,7 @@ const Hero = () => (
       </div>
 
       <div className="order-1 flex justify-center lg:order-2">
-        <div className="group relative h-72 w-72 sm:h-96 sm:w-96">
+        <div className="group relative h-64 w-64 min-[375px]:h-72 min-[375px]:w-72 sm:h-96 sm:w-96">
           <div className="absolute inset-0 animate-[spin_14s_linear_infinite] rounded-full bg-[conic-gradient(from_0deg,#22d3ee,#8b5cf6,#22d3ee)] p-[3px] opacity-80">
             <div className="h-full w-full rounded-full bg-slate-950" />
           </div>
@@ -255,7 +255,7 @@ const Hero = () => (
               className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
             />
           </div>
-          <div className="absolute -left-4 top-8 rounded-2xl border border-white/10 bg-slate-900/90 px-4 py-2 text-sm shadow-xl backdrop-blur sm:-left-10">
+          <div className="absolute -left-2 top-8 rounded-2xl border border-white/10 bg-slate-900/90 px-4 py-2 text-sm shadow-xl backdrop-blur min-[375px]:-left-4 sm:-left-10">
             <p className="font-bold text-white">4+ years</p>
             <p className="text-xs text-slate-400">DevOps experience</p>
           </div>
@@ -270,14 +270,14 @@ const Hero = () => (
 
 const Stats = () => (
   <section className="mx-auto -mt-6 max-w-6xl px-6">
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+    <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
       {stats.map((s, i) => (
         <Reveal key={s.label} delay={i * 100}>
           <Card className="text-center">
-            <p className="bg-gradient-to-r from-cyan-300 to-violet-300 bg-clip-text text-4xl font-extrabold text-transparent">
+            <p className="bg-gradient-to-r from-cyan-300 to-violet-300 bg-clip-text text-2xl font-extrabold text-transparent min-[360px]:text-3xl sm:text-4xl">
               {s.value}
             </p>
-            <p className="mt-2 text-sm text-slate-400">{s.label}</p>
+            <p className="mt-2 text-xs text-slate-400 min-[360px]:text-sm">{s.label}</p>
           </Card>
         </Reveal>
       ))}
@@ -288,7 +288,7 @@ const Stats = () => (
 const About = () => (
   <section id="about" className="mx-auto max-w-4xl px-6 py-28">
     <SectionTitle eyebrow="About" title="Who I am" />
-    <Reveal className="space-y-5 text-center text-lg leading-relaxed text-slate-400">
+    <Reveal className="space-y-5 text-left text-lg leading-relaxed text-slate-400 sm:text-center">
       {about.map((p) => (
         <p key={p}>{p}</p>
       ))}
@@ -318,11 +318,11 @@ const Services = () => (
 const Experience = () => (
   <section id="experience" className="mx-auto max-w-4xl px-6 py-20">
     <SectionTitle eyebrow="Experience" title="Where I've worked" />
-    <ol className="relative border-l border-white/10 pl-8">
+    <ol className="relative border-l border-white/10 pl-6 sm:pl-8">
       {experience.map((job) => (
         <li key={job.company} className="relative mb-12 last:mb-0">
           <span
-            className={`absolute -left-[39px] top-7 h-4 w-4 rounded-full ring-4 ring-slate-950 ${
+            className={`absolute -left-[31px] top-7 h-4 w-4 rounded-full ring-4 ring-slate-950 sm:-left-[39px] ${
               job.current ? 'bg-emerald-400' : 'bg-cyan-400'
             }`}
           />
@@ -453,10 +453,12 @@ const Contact = () => (
         </p>
         <a
           href={`mailto:${profile.email}`}
-          className="mt-8 inline-block rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 px-8 py-3 font-semibold text-white shadow-lg shadow-cyan-500/25 transition hover:scale-105"
+          className="mt-8 inline-block max-w-full rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 px-8 py-3 font-semibold text-white shadow-lg shadow-cyan-500/25 transition hover:scale-105"
         >
-          {profile.email}
+          <span className="sm:hidden">Email me</span>
+          <span className="hidden sm:inline">{profile.email}</span>
         </a>
+        <p className="mt-3 break-all text-sm text-slate-400 sm:hidden">{profile.email}</p>
         <div className="mt-8 flex justify-center">
           <SocialIcons />
         </div>
