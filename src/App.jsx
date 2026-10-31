@@ -255,7 +255,7 @@ const Hero = () => (
               className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
             />
           </div>
-          <div className="absolute -left-2 top-8 rounded-2xl border border-white/10 bg-slate-900/90 px-4 py-2 text-sm shadow-xl backdrop-blur min-[375px]:-left-4 sm:-left-10">
+          <div className="absolute -left-2 top-[58%] rounded-2xl sm:top-8 border border-white/10 bg-slate-900/90 px-4 py-2 text-sm shadow-xl backdrop-blur min-[375px]:-left-4 sm:-left-10">
             <p className="font-bold text-white">4+ years</p>
             <p className="text-xs text-slate-400">DevOps experience</p>
           </div>
